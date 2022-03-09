@@ -6,13 +6,13 @@ All the operations were done using this list, but making sure the set's property
 IEnumerable to support the use of foreach, we need it to iterate through the collection. 
 
 Here are some of the class methods: Insert, Remove, Merge, Filter, Contains and PrintItems. 
-I used the Insert method to add elements in this list and the Remove method to add/remove a specific element, given as a parameter.
-The Merge method is used to concatenate to my set another set. Also, the Filter method takes as a parameter a lambda function and 
-return a subset of the current instance of the Set class, all element having a specific property given by the lambda function.
+I used the Insert and the Remove methods to add/remove a specific element, given as a parameter. The Merge method is used to concatenate 
+to my set another set. Also, the Filter method takes as a parameter a lambda function and return a subset of the current instance of 
+the Set class, all element having a specific property given by the lambda function.
 
 To make sure that the set doesn't contain duplicates, I used exceptions. For example, everytime we try to add an item that already 
 exists or try to remove an element not existing in the list, an exception is thrown. This exception is catched in the Main method,
-of the Program.cs file. 
+of the Program.cs file, where the methods are used.
 
 In the Main method, I created objects of the newly created class Set and tested all the implemented methods to make sure
 everything works fine. I also tested the cases where exceptions were thrown.
